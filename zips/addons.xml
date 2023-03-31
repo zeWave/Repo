@@ -6,7 +6,7 @@
 <!-- 6.1- ZeWave Repo -->
 <addon id="repository.ZeWave"
 		name="ZeWave Add-on repository"
-		version="0.0.1"
+		version="0.0.2"
 		provider-name="ZeWave Team">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -14,9 +14,9 @@
 	<extension point="xbmc.addon.repository" name="ZeWave Add-on repository">
 		<!-- Do not forget to bump add-on version when changing paths to force a repo refresh -->
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/ZeWave/Repo1/main/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/ZeWave/Repo1/main/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://github.com/ZeWave/Repo1/tree/main/zips</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/ZeWave/Repo/main/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/ZeWave/Repo/main/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/ZeWave/Repo/tree/main/zips</datadir>
 			<artdir>https://github.com/ZeWave/images/tree/main/</artdir>
 		</dir>
 	</extension>
