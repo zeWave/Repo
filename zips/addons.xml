@@ -6,7 +6,7 @@
 <!-- 6.1- ZeWave Repo -->
 <addon id="repository.ZeWave"
 		name="ZeWave Add-on repository"
-		version="0.0.2"
+		version="0.0.3"
 		provider-name="ZeWave Team">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -17,7 +17,7 @@
             <info compressed="false">https://raw.githubusercontent.com/ZeWave/Repo/main/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/ZeWave/Repo/main/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://github.com/ZeWave/Repo/tree/main/zips</datadir>
-			<artdir>https://github.com/ZeWave/images/tree/main/</artdir>
+			<artdir>https://github.com/ZeWave/Images/tree/main/</artdir>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
