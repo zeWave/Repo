@@ -3,7 +3,7 @@
 
 <!-- 3- plugin.program -->
 
-<!-- 3.1- ZeWave Wizard -->
+<!-- 3.1- ZeWave Wizard xxx -->
 <addon id="plugin.program.ZeWaveWizard" name="[COLOR red]ZeWave Wizard[/COLOR]" version="1.0.3" provider-name="ZeWave Team">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
