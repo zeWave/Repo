@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
 
+<!-- 3- plugin.program -->
+
+<!-- 3.1- ZeWave Wizard -->
+<addon id="plugin.program.ZeWaveWizard" name="[COLOR red]ZeWave Wizard[/COLOR]" version="1.0.3" provider-name="ZeWave Team">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.six" />
+    <import addon="script.module.kodi-six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">GUI Wizard</summary>
+    <description lang="en">ZeWave Wizard.</description>
+    <platform>all</platform>
+    <assets>
+				<icon>icon.png</icon>
+				<fanart>fanart.jpg</fanart>
+				<banner></banner>
+				<clearlogo></clearlogo>
+				<screenshot></screenshot>
+		</assets>
+  </extension>
+</addon>
+
 <!-- 6- Repositories B -->
 
 <!-- 6.1- ZeWave Repo -->
@@ -39,24 +66,5 @@
 <!-- 7- Services -->
 
 <!-- 7.1- All Subs Flash -->
-<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.6.1" provider-name="Sbs">
-  <requires>
-    
-	<import addon="script.module.requests" version="2.9.1" />
-	<import addon="script.common.plugin.cache" version="2.5.5"/>
-    <import addon="script.subskeys" version="1.0.1"/>
-	<import addon="script.module.chardet" />
-	
-  </requires>
-  <extension point="xbmc.service" library="autosub.py" start="startup"></extension> 
-  <extension point="xbmc.subtitle.module" library="service.py"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">All sites Subs Super Speed</summary>
-    <description lang="en">All sites Subs. Subcenter.wizdom,subcene,opensubtitles. Thanks to:Catz,wizdom,manacker,amet</description>
-    <language>en</language>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-  </extension>
-</addon>
 
 </addons>
-
