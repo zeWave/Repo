@@ -4,28 +4,30 @@
 <!-- 3- plugin.program -->
 
 <!-- 3.1- ZeWave Wizard -->
-<addon id="plugin.program.ZeWaveWizard" name="[COLOR red]ZeWave Wizard[/COLOR]" version="1.0.3" provider-name="ZeWave Team">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.six" />
-    <import addon="script.module.kodi-six" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
+<addon id="plugin.program.zewave" name="[COLOR yellow]ZeWave Wizard[/COLOR]" version="0.0.1" provider-name="ZeWave Team">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+    </requires>
+    
+    <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="startup.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">GUI Wizard</summary>
-    <description lang="en">ZeWave Wizard.</description>
-    <platform>all</platform>
-    <assets>
-				<icon>icon.png</icon>
-				<fanart>fanart.jpg</fanart>
-				<banner></banner>
-				<clearlogo></clearlogo>
-				<screenshot></screenshot>
-		</assets>
-  </extension>
+    </extension>
+    
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+    
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR blue]ZeWave Wizard[/COLOR]</summary>
+        <description lang="en">[COLOR blue]ZeWave Wizard[/COLOR]</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <!-- 6- Repositories B -->
