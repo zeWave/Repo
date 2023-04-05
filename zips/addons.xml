@@ -1,71 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
 
-<!-- 3- plugin.program -->
-
-<!-- 3.1- ZeWave Wizard -->
-<addon id="plugin.program.zewave" name="[COLOR yellow]ZeWave Wizard[/COLOR]" version="0.0.1" provider-name="ZeWave Team">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.six" />
-    </requires>
-    
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    
-    <extension point="xbmc.service" library="startup.py" start="startup" />
-    
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR blue]ZeWave Wizard[/COLOR]</summary>
-        <description lang="en">[COLOR blue]ZeWave Wizard[/COLOR]</description>
-        <platform>all</platform>
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-        <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<!-- 5- plugin.video B -->
-
-<!-- 5.1- Playlist Loader -->
-<addon id="plugin.video.playlistloader" name="Playlist Loader" version="1.1.4" provider-name="Nux007, Publish3r, Silhouette2022">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.requests" version="2.22.0"/>
-    <import addon="script.module.dateutil" version="2.8.1"/>    
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Playlist Loader</summary>
-    <summary lang="de_DE">Playlist Loader</summary>
-    <description lang="en_GB">Manage your various playlists in a simple way.[CR]EPG support for xmltv.[CR][CR]Note:[CR]This addon does not contain any illegal content. Should you add any illegal content, you are fully responsible for any consequences.</description>
-    <description lang="de_DE">Verwalte auf einfache Art und Weise deine verschiedenen Playlisten.[CR]Unterstützt EPG für XMLTV.[CR][CR]Hinweis:[CR]Dieses Addon enthält keine illegalen Inhalte. Solltest du irgendwelche illegalen Inhalte hinzufügen, bist du im vollen Umfang für eventuelle Folgen verantwortlich.</description>
-    <description lang="ru_RU">Дополнение для управления плейлистами.[CR][CR]Замечание:[CR]Это дополнение не содержит нелегального контента. Вы несете полную ответственность, если используете любой нелегальный контент.</description>
-    <language>en de</language>
-    <platform>all</platform>
-    <source>https://github.com/Publish3r/repository.kodi.matrix/tree/main/plugin.video.playlistloader</source>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-<!-- 6- Repositories B -->
-
-<!-- 6.1- ZeWave Repo -->
-<addon id="repository.zewave" name="The Wave Repo" version="0.0.10" provider-name="The Wave Team">
+<addon id="repository.zewave" name="The Wave Repo" version="0.0.12" provider-name="The Wave Team">
     <extension point="xbmc.addon.repository" name="The Wave Repo">
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/zewave/repo/master/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/zewave/repo/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://github.com/zewave/repo/tree/master/zips</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/ZeWave/Repo/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/ZeWave/Repo/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/ZeWave/Repo/tree/master/zips</datadir>
 		</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
