@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.zewave" name="The Wave Repository" version="0.0.8" provider-name="The Wave Team">
-	<extension point="xbmc.addon.repository" name="The Wave Repository">
-		<info compressed="false">https://raw.githubusercontent.com/zewave/repo/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/zewave/repo/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/zewave/repo/master/zips</datadir>
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/zewave/repo/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/zewave/repo/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/zewave/repo/master/zips</datadir>
+<addon id="repository.zewave" name="The Wave Repo" version="0.0.10" provider-name="The Wave Team">
+    <extension point="xbmc.addon.repository" name="The Wave Repo">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/zewave/repo/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/zewave/repo/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/zewave/repo/tree/master/zips</datadir>
 		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-		<summary>The Wave Repository</summary>
-		<description>The Wave Repository</description>
-		<platform>all</platform>
-	</extension>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">The Wave Repo is a educational add-on. We do not host any of the contents streamed.</summary>
+        <description lang="en"></description>
+        <platform>all</platform>
+    </extension>
 </addon>
