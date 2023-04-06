@@ -5,7 +5,7 @@
 <!-- 3- plugin.program -->
 
 <!-- 3.1- The Wave Hebrew Wizard -->
-<addon id="plugin.program.waveHeb" name="[COLOR yellow]The Wave Hebrew Wizard[/COLOR]" version="0.0.1" provider-name="The Wave Team">
+<addon id="plugin.program.waveHeb" name="[COLOR yellow]The Wave Hebrew Wizard[/COLOR]" version="0.0.2" provider-name="The Wave Team">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
