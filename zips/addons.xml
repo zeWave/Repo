@@ -4,23 +4,20 @@
 
 <!-- 3- plugin.program -->
 
-<!-- 3.1- The Wave Wizard -->
-<addon id="plugin.program.zewave" name="[COLOR yellow]ZeWave Wizard[/COLOR]" version="0.0.1" provider-name="ZeWave Team">
+<!-- 3.1- The Wave Hebrew Wizard -->
+<addon id="plugin.program.waveHeb" name="[COLOR yellow]The Wave Hebrew Wizard[/COLOR]" version="0.0.1" provider-name="The Wave Team">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
         <import addon="script.module.six" />
-    </requires>
-    
+    </requires>    
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
-    </extension>
-    
-    <extension point="xbmc.service" library="startup.py" start="startup" />
-    
+    </extension>    
+    <extension point="xbmc.service" library="startup.py" start="startup" />    
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR blue]ZeWave Wizard[/COLOR]</summary>
-        <description lang="en">[COLOR blue]ZeWave Wizard[/COLOR]</description>
+        <summary lang="en">[COLOR blue]The Wave Hebrew Wizard[/COLOR]</summary>
+        <description lang="en">[COLOR blue]The Wave Hebrew Wizard[/COLOR]</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
