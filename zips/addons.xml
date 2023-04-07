@@ -224,9 +224,7 @@
 
 </addon>
 
-<!-- 3- plugin.program -->
-
-<!-- 3.1- The Wave Hebrew Wizard -->
+<!-- 3.3- The Wave Hebrew Wizard -->
 <addon id="plugin.program.waveHeb" name="[COLOR yellow]The Wave Hebrew Wizard[/COLOR]" version="0.0.2" provider-name="The Wave Team">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -248,6 +246,35 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
+</addon>
+
+<!-- 3.4- The Wave Builds Gui Wizard -->
+<addon 
+	id="plugin.program.waveguiwiz" 
+	name="[COLOR white]The Wave Builds Gui Wizard[/COLOR]" 
+	version="0.0.1" 
+	provider-name="[COLOR white]The Wave Team[/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.six" />
+    <import addon="script.module.kodi-six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The Wave GUI Wizard</summary>
+    <description lang="en">In this wizard you will find the latest GUI Wizard and Tools. Thanks to cMan for using this add-on.</description>
+    <platform>all</platform>
+    <assets>
+				<icon>icon.png</icon>
+				<fanart>fanart.jpg</fanart>
+				<banner></banner>
+				<clearlogo></clearlogo>
+				<screenshot></screenshot>
+		</assets>
+  </extension>
 </addon>
 
 <!-- 5- plugin.video B -->
