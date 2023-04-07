@@ -2,6 +2,228 @@
 
 <addons>
 
+<!-- 1- Context -->
+
+<!-- 1.1- Subtitles Dialog - Contextmenu -->
+<addon id="context.subtitlesdialog.contextmenu" name="Subtitles Dialog - Contextmenu" version="1.0.1" provider-name="burekas">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="kodi.context.item" library="addon.py">
+      <item>
+        <label>32000</label>
+        <visible>true</visible>
+      </item>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Adds a subtitles dialog contextmenu button</summary>
+        <description lang="en">Adds a subtitles dialog contextmenu button to context menu, so you can use the subtitles dialog also when kodi is not playing.[CR]You can use the manual search button to check if subtitles exist, or focus on an item and it will automatically check it for you without typing.[CR][CR]Only supported by these addons and above:[CR]Subscenter.org (4.1.2)[CR]Ktuvit.com (4.5.1)[CR]TheWiz Subs (1.1.4)[CR]Torec (1.2.1)</description>
+        <platform>all</platform>
+        <language></language>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum>http://www.hometheater.co.il/vt265959.html</forum>
+        <source></source>
+    </extension>
+</addon>
+
+<!-- 2- plugin.audio -->
+
+<!-- 2.1- Dash Radio -->
+<addon id="plugin.audio.dashradio" name="Dash Radio" version="420.3" provider-name="Diggz">
+<requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>audio</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+    <summary lang="en">Dash Radio</summary>
+    <description lang="en">Dash Radio is a digital radio broadcasting platform over 80 original stations. These stations are curated by DJs, radio personalities, musicians, and music tastemakers. The platform includes partner stations curated by Snoop Dogg, Kylie Jenner, Lil Wayne, Tech N9ne, Borgore, B-Real of Cypress Hill, and others.</description>
+    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Free</license>
+    <platform>all</platform>
+  <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+     </assets>	
+    </extension>
+</addon>
+
+<!-- 2.2- MP3 Streams -->
+<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2022.0.2" provider-name="Jon Bovi">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.future"/>
+        <import addon="script.module.mutagen"/>
+        <import addon="script.module.requests"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.service" library="playerMP3.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>A music streaming Collection.</summary>
+        <description>MP3 Streams Kodi 19+</description>
+        <news>2022.0.2 - Fix errors loading pages. 2022.0.1 - Small fix, Kodi 20 ready. 2021.0.6 - Fixed issue with hanging  when skipping tracks. 2021.0.4 - Fixed Settings, 2021.0.3 - Bugfixes. Enjoy!</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<!-- 3- plugin.program -->
+
+<!-- 3.1- AutoCompletion for virtual keyboard -->
+<addon id="plugin.program.autocompletion" name="AutoCompletion for virtual keyboard" version="2.1.2" provider-name="Philipp Temminghoff (phil65), sualfred, xulek, finkleandeinhorn">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.autocompletion" version="2.0.3"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.python.pluginsource" library="plugin.py" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">AutoCompletion for the virtual keyboard (needs skin support)</summary>
+        <description lang="en_GB">AutoCompletion for the virtual keyboard (needs skin support)</description>
+        <summary lang="es_ES">Autocompletar para el teclado virtual (necesita soporte de skin)</summary>
+        <description lang="es_ES">Autocompletar para el teclado virtual (necesita soporte de skin)</description>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <source>https://github.com/finkleandeinhorn/plugin.program.autocompletion</source>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <screenshot>resources/screenshot-01.jpg</screenshot>
+            <screenshot>resources/screenshot-02.jpg</screenshot>
+            <screenshot>resources/screenshot-03.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>>
+
+<!-- 3.2- Super Favourites -->
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.2.6" provider-name="jmooremcc, spoyser">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.metahandler" optional="true" />
+  </requires>
+
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio image executable</provides>
+  </extension>
+
+  
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+    <summary lang="es_ES">Ponga todas sus partes favoritas de todos sus complementos favoritos en un complemento fácil de usar.</summary>
+    <description lang="en_GB">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+    <description lang="es_ES">Super Favoritos es la mejor forma de administrar sus favoritos de Kodi.[CR][CR]Prácticamente cualquier elemento de menú dentro de Kodi se puede agregar a Súper favoritos, incluso desde complementos que normalmente no brindan esta función.[CR][CR]Super Favoritos le permite administrar mejor sus favoritos de Kodi, incluída la creación de subcarpetas, en las que puede copiar o mover sus secciones o addons preferidos.[CR][CR]Esto le permite crear su propio complemento personalizado con lo mejor. Busque sus addons preferidos, reproduzca su música favorita, lea sus historias favoritas, seleccione sus listas de reproducción, explore sus películas, escuche sus estaciones de radio, vea sus dibujos animados, las posibilidades son infinitas, todos sus favoritos desde un solo uso addon, fácil de añadir.</description>
+    <platform>all</platform>
+    <language>en es</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+    <website />
+    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+    <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
+    <email>seanpoyser at gmail.com</email>
+    <email>jmooremcc at hotmail.com</email>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+
+    <news>
+2.2.6 April 2022
+      - Fix context menu settings bug
+      - Fix more issues with activateWindowCommand
+
+2.2.5 February 2022
+      - Generic Fix for activateWindowCommand
+
+2.2.4 February 2022
+      - Fix URL Playback
+
+2.2.3 February 2022
+      - Fix folder lock
+      - Fix name colorization
+
+2.2.1 February 2022
+      - Minor Bug Fix
+
+2.2.0 December 2021
+      - Fixed Play From Here functionality
+      - Fixed handling of local folders so that back button now works correctly
+      - Added threading decorator to utils
+
+2.1.0: 9 October 2021
+      - Added Spanish Translation contributed by populc
+      - Fixed issue in player module
+
+2.0.11: 26 August 2021
+      - Fixed bug in download module that prevented videos from being downloaded
+
+2.0.10: 6 June 2021
+      - Fixed bug that prevented Hebrew language for working
+
+2.0.9: 15 May 2021
+      - Fixed bug in Player.def activateWindowCommand(cmd) that was messing up the ability
+        to return from child direrctories
+
+2.0.8: 14 May 2021
+      - Fixed various incompatibilities with latest version of Matrix involving decode('utf-8')
+        that caused crashes.
+
+2.0.7: 17 February 2021
+    - Fixed remote folder access via another plugin
+
+2.0.6: 11 January 2021
+      - Fixed access to local folders and smb folders
+
+2.0.5: 12 December 2020
+      - More Fixes for Network Folder Failure to Launch
+
+2.0.0: 29 November 2020
+      - Matrix Version
+
+1.0.60: 1 November 2020
+    - Fixed launch issues in Kodi Leia
+
+1.0.59: 29th May 2017
+    - 'Now playing' text now defined by SF due to skin variations
+    </news>
+
+  </extension>
+
+
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+
+      <item library="capture.py">
+        <label>$ADDON[plugin.program.super.favourites 30002]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED),True) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_addtofaves.py">
+        <label>$ADDON[plugin.program.super.favourites 30047]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED),True) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_download.py">
+        <label>$ADDON[plugin.program.super.favourites 30259]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED),True) + Player.IsInternetStream</visible>
+      </item>
+
+    </menu>
+  </extension>
+
+</addon>
+
 <!-- 3- plugin.program -->
 
 <!-- 3.1- The Wave Hebrew Wizard -->
