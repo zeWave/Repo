@@ -384,7 +384,7 @@ Use this to organize your Favourites.
 <!-- 5.3- Mando -->
 <addon id="plugin.video.mando"                                                                                                                                    
 	   name="Mando"                                                 
-	   version="6.2.3"                                                                                                                                        
+	   version="6.4.9"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
 	
