@@ -320,7 +320,37 @@ Use this to organize your Favourites.
 
 <!-- 5- plugin.video B -->
 
-<!-- 5.1- Last Played -->
+<!-- 5.1- Kids New -->
+<addon id="plugin.video.kids_new"                                                                                                                                    
+	   name="הכל לילדים"                                                 
+	   version="2.6.4"                                                                                                                                        
+	   provider-name="Kid one">
+  <requires>
+
+	<import addon="script.module.requests"/>
+	<import addon="script.module.resolveurl"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension library="resources/modules/" point="xbmc.python.module" />
+  <extension library="resources/" point="xbmc.python.module" />
+  <extension library="script.module.requests" point="xbmc.python.module" />
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+	<reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="he">הכל לילדים</summary>
+    <description lang="he">הכל לילדים</description>
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<!-- 5.2- Last Played -->
 <addon id="plugin.video.last_played" name="Last Played" version="6.1.0" provider-name="Luis Rodrigues">
 	<extension point="xbmc.python.pluginsource" library="addon.py">
 		<provides>video</provides>
@@ -351,7 +381,7 @@ Use this to organize your Favourites.
 	</extension>
 </addon>
 
-<!-- 5.2- Mando -->
+<!-- 5.3- Mando -->
 <addon id="plugin.video.mando"                                                                                                                                    
 	   name="Mando"                                                 
 	   version="6.2.3"                                                                                                                                        
@@ -378,7 +408,7 @@ Use this to organize your Favourites.
   </extension>
 </addon>
 
-<!-- 5.3- Movix Live -->
+<!-- 5.4- Movix Live -->
 <addon id="plugin.video.movixws"                                                                                                                                    
 	   name="Movix Live"                                                 
 	   version="1.5.8"
@@ -407,7 +437,7 @@ Use this to organize your Favourites.
   
 </addon>
 
-<!-- 5.4- Playlist Loader -->
+<!-- 5.5- Playlist Loader -->
 <addon id="plugin.video.playlistloader" name="Playlist Loader" version="1.1.4" provider-name="Nux007, Publish3r, Silhouette2022">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -432,7 +462,7 @@ Use this to organize your Favourites.
   </extension>
 </addon>
 
-<!-- 5.5- Telemedia19 2.0 -->
+<!-- 5.6- Telemedia19 2.0 -->
 <addon id="plugin.video.telemedia19"                                                                                                                                    
 	   name="Telemedia19 2.0"                                                 
 	   version="2.0.9"                                                                                                                                        
