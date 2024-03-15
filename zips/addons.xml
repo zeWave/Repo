@@ -464,7 +464,7 @@ Use this to organize your Favourites.
 </addon>
 
 <!-- 7.2- The Wave repo -->
-<addon id="repository.zewave"
+<addon id="repository.zeWave"
 		name="The Wave repo"
 		version="0.0.1"
 		provider-name="The Wave Team">
@@ -474,9 +474,9 @@ Use this to organize your Favourites.
 	<extension point="xbmc.addon.repository" name="The Wave repo">
 		<!-- Do not forget to bump add-on version when changing paths to force a repo refresh -->
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/Zewave/Repo/master/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/Zewave/Repo/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/Zewave/Repo/master/zips/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/zeWave/Repo/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/zeWave/Repo/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/zeWave/Repo/master/zips/</datadir>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
