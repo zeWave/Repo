@@ -751,7 +751,7 @@ Use this to organize your Favourites.
 <!-- 10- Services -->
 
 <!-- 10.1- DarkSubs -->
-<addon id="service.subtitles.All_Subs" name="DarkSubs" version="4.1.9" provider-name="Sbs">
+<addon id="service.subtitles.All_Subs" name="DarkSubs" version="4.3.0" provider-name="Sbs">
   <requires>
     
 	<import addon="script.module.requests" version="2.9.1" />
@@ -773,7 +773,7 @@ Use this to organize your Favourites.
   </extension>
   <extension point="kodi.context.item" library="check_sub.py">
         <item>
-            <label>[COLOR yellow][B]חפש כתוביות[/B][/COLOR]</label>
+            <label>[COLOR yellow][B]חפש כתוביות (DarkSubs)[/B][/COLOR]</label>
             <visible>true</visible>
         </item>
     </extension>
