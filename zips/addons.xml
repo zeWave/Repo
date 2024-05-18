@@ -279,7 +279,7 @@ Use this to organize your Favourites.
   </extension>
 </addon>
 
-<!-- 5.2- Playlist Loader -->
+<!-- 5.4- Playlist Loader -->
 <addon id="plugin.video.playlistloader" name="Playlist Loader" version="1.1.4" provider-name="Nux007, Publish3r, Silhouette2022">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -304,7 +304,7 @@ Use this to organize your Favourites.
   </extension>
 </addon>
 
-<!-- 5.3- The_TV_app -->
+<!-- 5.5- The_TV_app -->
 <addon id="plugin.video.thetvapp" name="The_TV_app" version="0.11" provider-name="xxxxxx">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -329,7 +329,7 @@ Use this to organize your Favourites.
     </extension>
 </addon>
 
-<!-- 5.4- Telemedia 2.0 -->
+<!-- 5.6- Telemedia 2.0 -->
 <addon id="plugin.video.telemedia"                                                                                                                                    
 	   name="Telemedia 2.0"                                                 
 	   version="3.0.2"                                                                                                                                        
