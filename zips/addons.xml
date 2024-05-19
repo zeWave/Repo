@@ -418,41 +418,60 @@ Use this to organize your Favourites.
 	</extension>
 </addon>
 
-<!-- 8- Skins -->
+<!-- 8- Scripts -->
 
-<!-- 8.1- Skin Eminence Mod -->
-<addon
-    id="skin.eminence.2.mod"
-    version="999.3.0.4"
-    name="Eminence Mod"
-    provider-name="jurialmunkey">
-    <requires>
-        <import addon="xbmc.gui" version="5.17.0"/>
-        <import addon="script.skinshortcuts" version="1.0.0" />
-        <import addon="plugin.video.themoviedb.helper" version="4.4.0" />
-        <import addon="script.image.resource.select" version="0.0.5" />
-        <import addon="resource.images.weatherfanart.single" version="0.0.6"/>		
-    </requires>
-    <extension point="xbmc.gui.skin" effectslowdown="1.00" debugging="false">
-        <res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Eminence</summary>
-        <description lang="en">Eminence is a skin that aims to be clean, clear, simple and modern.</description>
-        <description lang="fr">Eminence est un thème qui vise à être clair, simple et moderne.</description>
-		<assets>
-		 	<icon>icon.png</icon>
- 			<fanart>fanart.jpg</fanart>
-		</assets>	
-		<news> 
-		</news>
-	</extension>
+<!-- 8.1- EZ Maintenance+ -->
+<addon id="script.ezmaintenanceplus" name="EZ Maintenance+" version="2023.01.09.0" provider-name="aenema, peno">
+  <requires>
+    <import addon="script.module.requests" version="1.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+	<summary>A Streamlined Utility Tool for Kodi</summary>
+	<description>No Bloatware, no Nonsense! Just Keep your Kodi sharp and clean with this utility tool... Now with a Custom Wizard.</description>
+    <language></language>
+    <platform>all</platform>
+    <license>The MIT License</license>
+    <forum>-</forum>
+    <source>https://github.com</source>
+    <assets>
+	    <icon>icon.png</icon>
+	    <fanart>fanart.png</fanart>
+    </assets>
+    <news>
+2023.01.09.0
+ - Added AutoClean Cache functionality every x days at a given hour.
+ - Backup always replaced the home folder reference in xml files with special://home
+   Not all addons can handle this replace so it is now possible via a setting to disable this.
+ - Backup Cancel didn't work. This is now fixed.
+
+2023.01.01.0
+ - Fix a fix on 2022.12.28.0
+
+2022.12.28.0
+ - Fix crash with full backup when there are foreign, like Hebrew, characters in xml files
+
+2021.12.19.0
+ - Made kodi 19 (Matrix) compatible.
+
+2021.11.03.0
+- Fix Speedtest crash.
+
+2020.12.19.1
+- The plugin was also installed under Video add-ons. Now it only is in Program add-ons where it belongs
+- Clean removed some files created by Common plugin cache or StorageServer or script.common.plugin.cache at kodi startup.
+  This resulted in breaking cache functionality of kodi
+- Upload kodi log file to pastebin didn't always work and the first bytes were binary characters
+- Made all decode calls UTF-8
+- Improved ADVANCED SETTINGS(BUFFER SIZE) functionality
+    </news>
+  </extension>
 </addon>
-	
-<!-- 9- Scripts -->
 
-<!-- 9.1- Script Module Autocompletion -->
+<!-- 8.2- Script Module Autocompletion -->
 <addon id="script.module.autocompletion" name="AutoCompletion library" version="2.1.2" provider-name="Philipp Temminghoff (phil65), bbaronSVK, finkleandeinhorn, berkhornet">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -471,7 +490,7 @@ Use this to organize your Favourites.
     </extension>
 </addon>
 
-<!-- 9.2- Script Module CocoScrapers -->
+<!-- 8.2- Script Module CocoScrapers -->
 <addon id="script.module.cocoscrapers" name="CocoScrapers Module" version="1.0.20" provider-name="CocoJoe">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
@@ -501,9 +520,9 @@ Use this to organize your Favourites.
 	</extension>
 </addon>
 
-<!-- 10- Services -->
+<!-- 9- Services -->
 
-<!-- 10.1- DarkSubs -->
+<!-- 9.1- DarkSubs -->
 <addon id="service.subtitles.All_Subs" name="DarkSubs" version="4.4.5" provider-name="Sbs">
   <requires>
     <import addon="script.module.requests" version="2.9.1" />
@@ -530,7 +549,7 @@ Use this to organize your Favourites.
     </extension>
 </addon>
 
-<!-- 10.2- All Subs Plus -->
+<!-- 9.2- All Subs Plus -->
 <addon id="service.subtitles.all_subs_plus" name="All Subs Plus" version="2.3.1" provider-name="burekas">
     <requires>
         <import addon="script.module.requests" version="2.9.1" />
@@ -555,7 +574,7 @@ Use this to organize your Favourites.
     </extension>
 </addon>
 
-<!-- 10.3- Ktuvit Plus -->
+<!-- 9.3- Ktuvit Plus -->
 <addon id="service.subtitles.ktuvit_plus" name="Ktuvit Plus" version="1.1.2" provider-name="burekas">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -574,7 +593,7 @@ Use this to organize your Favourites.
     </extension>
 </addon>
 
-<!-- 10.4- Open-Subtitles Plus -->
+<!-- 9.4- Open-Subtitles Plus -->
 <addon id="service.subtitles.opensubtitles_plus" name="OpenSubtitles Plus" version="2.0.1"  provider-name="burekas">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -603,7 +622,7 @@ Use this to organize your Favourites.
     </extension>
 </addon>
 
-<!-- 10.5- Wizdom Plus -->
+<!-- 9.5- Wizdom Plus -->
 <addon id="service.subtitles.wizdom_plus" name="Wizdom Plus" version="1.1.2" provider-name="burekas">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -619,6 +638,135 @@ Use this to organize your Favourites.
             <icon>icon.png</icon>
         </assets>    
     </extension>
+</addon>
+
+<!-- 10- Skins -->
+
+<!-- 10.1- Skin Eminence Mod -->
+<addon id="skin.aeon.nox.5" version="99.99.99" name="Aeon Nox 5" provider-name="BigNoid">
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0" />
+		<import addon="script.skinshortcuts" version="1.0.10" />
+		<import addon="service.library.data.provider" version="0.0.7" />
+		<import addon="resource.images.studios.white" version="0.0.1" />
+		<import addon="resource.images.recordlabels.white" version="0.0.1" />
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="1080i" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">Aeon Nox 5: Redux</summary>
+		<summary lang="el">Aeon Nox 5: Redux</summary>
+		<summary lang="en_GB">Aeon Nox 5: Redux</summary>
+		<summary lang="en_AU">Aeon Nox 5: Redux</summary>
+		<summary lang="en_NZ">Aeon Nox 5: Redux</summary>
+		<summary lang="en_US">Aeon Nox 5: Redux</summary>
+		<summary lang="es">Aeon Nox 5: Redux</summary>
+		<summary lang="fi">Aeon Nox 5: Redux</summary>
+		<summary lang="fr">Aeon Nox 5 : Redux</summary>
+		<summary lang="fr_CA">Aeon Nox 5 : Redux</summary>
+		<summary lang="gl">Aeon Nox 5: Redux</summary>
+		<summary lang="he">Aeon Nox 5: Redux</summary>
+		<summary lang="hu">Aeon Nox 5: Redux</summary>
+		<summary lang="is">Aeon Nox 5: Redux</summary>
+		<summary lang="it">Aeon Nox 5: Redux</summary>
+		<summary lang="ko">Aeon Nox 5: Redux</summary>
+		<summary lang="lt">Aeon Nox 5: Redux</summary>
+		<summary lang="ms">Aeon Nox 5: Redux</summary>
+		<summary lang="nl">Aeon Nox 5: Redux</summary>
+		<summary lang="no">Aeon Nox 5: Redux</summary>
+		<summary lang="pl">Aeon Nox 5: Redux</summary>
+		<summary lang="pt">Aeon Nox 5: Redux</summary>
+		<summary lang="pt_BR">Aeon Nox 5: Redux</summary>
+		<summary lang="ro">Aeon Nox 5: Reproiectat</summary>
+		<summary lang="ru">Aeon Nox 5: Redux</summary>
+		<summary lang="sk">Aeon Nox 5: Redux</summary>
+		<summary lang="sv">Aeon Nox 5: Redux</summary>
+		<summary lang="th">Aeon Nox 5: Redux</summary>
+		<summary lang="vi">Aeon Nox 5: Redux - Sự trở về</summary>
+		<summary lang="zh">Aeon Nox 5: Redux</summary>
+		<description lang="de">Redux: Komplett neu designed für ein modernes Aussehen und das klassische Aeon-Feeling beizubehalten.</description>
+		<description lang="el">Redux: Πλήρως επανασχεδιασμένο για να προσφέρει μια μοντέρνα αισθητική, διατηρώντας ταυτόχρονα την κλασική ομορφιά του Aeon.</description>
+		<description lang="en_GB">Redux: Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+		<description lang="en_AU">Redux: Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+		<description lang="en_NZ">Redux: Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+		<description lang="en_US">Redux: Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+		<description lang="es">Redux: Completamente rediseñado para crear un aspecto moderno, pero conservando el toque clásico Aeon.</description>
+		<description lang="fi">Redux: Täysin uudelleensuunniteltu moderni ulkoasu, kuitenkin tuntuen klassiselta Aeon:lta.</description>
+		<description lang="fr">Redux : complètement revu pour créer une apparence moderne, en gardant l'impression classique d'Aeon.</description>
+		<description lang="fr_CA">Redux : complètement remanié pour créer une apparence moderne, tout en conservant l'esprit classique d'Aeon.</description>
+		<description lang="he">Redux: עיצוב חדש היוצר מראה מודרני אך משמר את ההרגשה של Aeon הקלאסי.</description>
+		<description lang="hr">Redux: Potpuno preoblikovan moderan izgled, uz zadržani klasični Aeon osjećaj.</description>
+		<description lang="hu">Redux: Teljesen áttervezett modern kinézet, de megtartva a klasszikus Aeon érzetet.</description>
+		<description lang="is">Redux: Endurhannað nútímalegt útlit í anda Aeon.</description>
+		<description lang="it">Redux: Completamente ridisegnato per creare un look moderno, mantenendo la consueta qualità Aeon.</description>
+		<description lang="ko">Redux: 고전적인 Aeon 느낌을 유지하면서 현대적인 모습으로 완전히 다시 디자인하여 만들었습니다.</description>
+		<description lang="lt">Redux: pilnai atnaujinta, kad sukurtų modernią išvaizdą, išlaikant klasikinio Aeon pojūtį.</description>
+		<description lang="ms">Redux: Direka semula sepenuhnya untuk hasilkan penampilan modern, tetapi masih mengekalkan penampilan Aeon klasik.</description>
+		<description lang="nl">Redux: Volledig opnieuw ontworpen om een ​​moderne look te creëren, met behoud van het klassieke Aeon gevoel.</description>
+		<description lang="no">Redux: Helt redesignet for å gi deg en moderne utforming, samtidig som man beholder den klassiske Aeon følelsen.</description>
+		<description lang="pl">Redux: Całkowicie przeprojektowana skóra Aeon, o nowoczesnym wyglądzie, zachowując klasyczny układ skóry Aeon.</description>
+		<description lang="pt">Redux: Completamente redesenhado para criar um visual moderno enquanto retém o toque clássico Aeon.</description>
+		<description lang="pt_BR">Redux: Design completamente novo para criar um look moderno, mantendo o feeling do Aeon Clássico.</description>
+		<description lang="ru">Redux: полностью переделенная, модернизированная классическая обложка Aeon.</description>
+		<description lang="sk">Redux: Kompletne prepracovaný dizajn s moderným vzhľadom pri zachovaní klasického štýlu Aeon.</description>
+		<description lang="sv">Redux: Totalt omarbetad för att skapa ett modernt utseende, samtidigt som man behåller den klassiska Aeon-känslan.</description>
+		<description lang="th">Redux: การออกแบบใหม่หมดจด เพื่อสร้างรูปลักษณ์ทันสมัย, ​​ขณะที่ยังคงความรู้สึกคลาสสิคของ Aeon.</description>
+		<description lang="vi">Redux: Thiết kế lại hoàn toàn để tạo nên một phong cách hiện đại, trong khi đó vẫn duy trì một cảm giác Aeon cổ điển.</description>
+		<disclaimer lang="en_GB">Mouse control is supported, althoug not recommended. It may not work correctly in all cases.</disclaimer>
+		<platform>all</platform>
+		<license>CC BY-NC-SA 4.0</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=183504</forum>
+		<website>https://github.com/BigNoid/Aeon-Nox</website>
+		<email>big.noid@kodi.tv</email>
+		<source>https://github.com/BigNoid/Aeon-Nox</source>
+		<news>Updated for Kodi v18 "Leia"[CR]For a full list of changes visit https://github.com/BigNoid/Aeon-Nox/commits/master</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+			<screenshot>resources/screenshot-06.jpg</screenshot>
+			<screenshot>resources/screenshot-07.jpg</screenshot>
+			<screenshot>resources/screenshot-08.jpg</screenshot>
+			<screenshot>resources/screenshot-09.jpg</screenshot>
+		</assets>
+		<size>13266401</size>
+	</extension>
+</addon>
+
+<!-- 10.2- Skin Eminence Mod -->
+<addon
+    id="skin.eminence.2.mod"
+    version="999.3.0.4"
+    name="Eminence Mod"
+    provider-name="jurialmunkey">
+    <requires>
+        <import addon="xbmc.gui" version="5.17.0"/>
+        <import addon="script.skinshortcuts" version="1.0.0" />
+        <import addon="plugin.video.themoviedb.helper" version="4.4.0" />
+        <import addon="script.image.resource.select" version="0.0.5" />
+        <import addon="resource.images.weatherfanart.single" version="0.0.6"/>		
+    </requires>
+    <extension point="xbmc.gui.skin" effectslowdown="1.00" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Eminence</summary>
+        <description lang="en">Eminence is a skin that aims to be clean, clear, simple and modern.</description>
+        <description lang="fr">Eminence est un thème qui vise à être clair, simple et moderne.</description>
+		<assets>
+		 	<icon>icon.png</icon>
+ 			<fanart>fanart.jpg</fanart>
+		</assets>	
+		<news> 
+		</news>
+	</extension>
 </addon>
 
 </addons>
