@@ -643,7 +643,7 @@ Use this to organize your Favourites.
 <!-- 10- Skins -->
 
 <!-- 10.1- Skin Eminence Mod -->
-<addon id="skin.aeon.nox.5" version="99.99.99" name="Aeon Nox 5" provider-name="BigNoid">
+<addon id="skin.aeon.nox.5" version="999.0.1" name="Aeon Nox 5" provider-name="BigNoid">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -715,6 +715,7 @@ Use this to organize your Favourites.
 		<description lang="th">Redux: การออกแบบใหม่หมดจด เพื่อสร้างรูปลักษณ์ทันสมัย, ​​ขณะที่ยังคงความรู้สึกคลาสสิคของ Aeon.</description>
 		<description lang="vi">Redux: Thiết kế lại hoàn toàn để tạo nên một phong cách hiện đại, trong khi đó vẫn duy trì một cảm giác Aeon cổ điển.</description>
 		<disclaimer lang="en_GB">Mouse control is supported, althoug not recommended. It may not work correctly in all cases.</disclaimer>
+		<disclaimer>Version with Arial fonts.</disclaimer>
 		<platform>all</platform>
 		<license>CC BY-NC-SA 4.0</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=183504</forum>
