@@ -714,7 +714,7 @@ Use this to organize your Favourites.
 </addon>
 
 <!-- 10.2- Skin Estuary Mode -->
-<addon id="skin.estuary" version="9.4.1" name="Estuary Mode" provider-name="phil65, Ichabod Fletchman">
+<addon id="skin.estuary" version="4.0.0" name="Estuary (Arial Font only)" provider-name="phil65, Ichabod Fletchman">
 	<requires>
 		<!-- <import addon="xbmc.gui" version="5.17.0"/> -->
 	</requires>
