@@ -643,7 +643,7 @@ Use this to organize your Favourites.
 <!-- 10- Skins -->
 
 <!-- 10.1- Skin Aeon Nox 5 -->
-<addon id="skin.aeon.nox.5" version="999.0.2" name="Aeon Nox 5" provider-name="BigNoid">
+<addon id="skin.aeon.nox.5" version="999.0.3" name="Aeon Nox 5 (Ariel Font Only)" provider-name="BigNoid">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
