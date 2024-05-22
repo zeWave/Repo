@@ -684,7 +684,7 @@ Use this to organize your Favourites.
 </addon>
 
 <!-- 10.2- Skin Aeon Nox: SiLVO (Arial Font Default -->
-<addon id="skin.aeon.nox.silvo" version="99.10.0.1" name="Aeon Nox: SiLVO (Arial Font Default)" provider-name="SiLVO">
+<addon id="skin.aeon.nox.silvo" version="999.10.0.1" name="Aeon Nox: SiLVO (Arial Font Default)" provider-name="SiLVO">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="script.skinshortcuts" version="2.0.1" />
