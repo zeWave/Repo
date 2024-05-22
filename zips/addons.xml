@@ -684,7 +684,7 @@ Use this to organize your Favourites.
 </addon>
 
 <!-- 10.2- Skin Aeon Nox: SiLVO (Arial Font Default -->
-<addon id="skin.aeon.nox.silvo" version="9.10.0.1" name="Aeon Nox: SiLVO (Arial Font Default)" provider-name="SiLVO">
+<addon id="skin.aeon.nox.silvo" version="99.10.0.1" name="Aeon Nox: SiLVO (Arial Font Default)" provider-name="SiLVO">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="script.skinshortcuts" version="2.0.1" />
@@ -788,7 +788,7 @@ Use this to organize your Favourites.
 	</extension>
 </addon>
 
-<!-- 10.2- Skin Arctic: Zephyr - Reloaded (Arial font only) -->
+<!-- 10.3- Skin Arctic: Zephyr - Reloaded (Arial font only) -->
 <addon id="skin.arctic.zephyr.mod" version="9.3.0.1" name="Arctic: Zephyr - Reloaded (Arial font only)" provider-name="jurialmunkey, beatmasterrs">
     <requires>
         <import addon="xbmc.gui" version="5.17.0"/>
