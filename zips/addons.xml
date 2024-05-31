@@ -224,7 +224,7 @@ Use this to organize your Favourites.
 </addon>
 
 <!-- 5.2- Fen-Light -->
-<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="1.0.52">
+<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="1.0.54">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
