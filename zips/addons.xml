@@ -471,7 +471,7 @@ Use this to organize your Favourites.
 <!-- 9- Services -->
 
 <!-- 9.1- DarkSubs -->
-<addon id="service.subtitles.All_Subs" name="DarkSubs" version="4.5.1" provider-name="Sbs">
+<addon id="service.subtitles.All_Subs" name="DarkSubs" version="4.6.2" provider-name="Sbs">
   <requires>
     <import addon="script.module.requests" version="2.9.1" />
     <import addon="script.module.chardet" />
@@ -481,10 +481,10 @@ Use this to organize your Favourites.
   <extension point="xbmc.addon.metadata">
     <reuselanguageinvoker>true</reuselanguageinvoker>
     <summary lang="en">Collect Subs From sites</summary>
-    <description lang="en">Ktuvit, Wizdom, OpenSubtitles, SubDL, BSPlayer</description>
+    <description lang="en">Enjoy Hebrew subtitles from all the top websites.</description>
     <assets>
             <icon>icon.png</icon>
-            <fanart>fanart.png</fanart>
+            <fanart>fanart.jpg</fanart>
     </assets>
     <language>en</language>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
