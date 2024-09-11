@@ -169,8 +169,8 @@ Use this to organize your Favourites.
 <!-- 3.4- The Wave Builds Gui Wizard -->
 <addon 
 	id="plugin.program.waveguiwiz" 
-	name="[COLOR white]The Wave Builds Gui Wizard[/COLOR]" 
-	version="0.0.1" 
+	name="[COLOR Red]The Wave Builds Gui Wizard[/COLOR]" 
+	version="0.0.2" 
 	provider-name="[COLOR white]The Wave Team[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
