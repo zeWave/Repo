@@ -9,11 +9,11 @@
 
 #### הורדת קבצי זיפ
 
-* אם רוצים להוריד את הקובץ הזיפ של מאגר Wave, יש להקליק על הקישור הבא:
+אם רוצים להוריד את הקובץ הזיפ של מאגר Wave, יש להקליק על הקישור הבא:
 <br>
 [The-Wave repository](https://zewave.github.io/Wave/repository.zeWave-0.0.1.zip)
 
-* אם רוצים להוריד את הקובץ הזיפ של אשף ההתקנה Wave-Wizard, יש להקליק על הקישור הבא:
+אם רוצים להוריד את הקובץ הזיפ של אשף ההתקנה Wave-Wizard, יש להקליק על הקישור הבא:
 <br>
 [The-Wave Gui Wizard](https://zewave.github.io/Wave/plugin.program.waveguiwiz-0.0.2.zip)
 
