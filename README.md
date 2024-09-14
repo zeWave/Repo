@@ -1,4 +1,4 @@
-# Ze Wave
+# The Wave Builds Wizard & Repository
 
 יש להגדיר מקור התקנה, במנהל הקבצים של קודי, מהקישור הבא: 
 <br>
