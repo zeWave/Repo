@@ -9,7 +9,8 @@
  ואחר כך לבצע בקודי התקנה מקובץ זיפ
 <br>
  
-<br>יש להקליק על הקישור כדי להוריד את הקובץ
+<br>
+אם רוצים להוריד את הקובץ יש להקליק על הקישור הבא
 [The-Wave repository](https://github.com/zeWave/Repo/raw/master/zips/repository.zeWave/repository.zeWave-0.0.1.zip)
 
 
