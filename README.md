@@ -1,21 +1,13 @@
 
-                     ***********
-********************** XStream **********************
-                     ***********
-
-     "Java to XML Serialization, and back again"
+                     ************
+********************** The Wave **********************
+                     ************
 
 
---[ Binaries ]-----------------------------------------------
-
-All binary artifacts are bundled in the -bin archive.  It includes
-the XStream jars and any other library used at build time, or
-optional runtime extras.  MXParser is recommend for use as it will
-greatly improve the performance of XStream.
 
 --[ Documentation ]------------------------------------------
 
-Documentation can be found at http://x-stream.github.io.  This
+Documentation can be found at http://zewave.github.io.  This
 includes:
  * Introduction and Tutorials
  * JavaDoc
@@ -37,4 +29,4 @@ This includes:
 
 - XStream Committers
 
- http://x-stream.github.io
+ http://zewave.github.io
