@@ -19,7 +19,7 @@
 
 <br><br> 
 
-![Icon](https://github.com/zeWave/Images/blob/master/icon.png)
+![](https://github.com/zeWave/Images/blob/master/icon.png "http://zewave.github.io/Wave")
 
 <br>
 <br> #Build #TheWave_Build
