@@ -1,27 +1,7 @@
 # Ze Wave
 
---[ Documentation ]------------------------------------------
+<br>[Click here to download The-Wave repository](https://github.com/zeWave/Repo/raw/master/zips/repository.zeWave/repository.zeWave-0.0.1.zip)
 
-Documentation can be found at http://zewave.github.io.  This
-includes:
- * Introduction and Tutorials
- * JavaDoc
- * Change History
- * Frequently Asked Questions
- * Security
 
---[ Source ]-------------------------------------------------
-
-The complete source for XStream is bundled in the -src archive.
-This includes:
- * Main API [xstream/src/java]
- * Unit Tests [xstream/src/test]
- * Maven Build Files [pom.xml]
- * Hibernate Module [xstream-hibernate]
- * Website [xstream-distribution]
-
--------------------------------------------------------------
-
-- XStream Committers
 
  http://zewave.github.io
