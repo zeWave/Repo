@@ -10,7 +10,10 @@
 <br>
  
 <br>
-אם רוצים להוריד את הקובץ יש להקליק על הקישור הבא [The-Wave repository](https://github.com/zeWave/Repo/raw/master/zips/repository.zeWave/repository.zeWave-0.0.1.zip)
+
+אם רוצים להוריד את הקובץ יש להקליק על הקישור הבא:
+<br>
+[The-Wave repository](https://github.com/zeWave/Repo/raw/master/zips/repository.zeWave/repository.zeWave-0.0.1.zip)
 
 
 
