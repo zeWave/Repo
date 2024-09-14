@@ -24,7 +24,8 @@
 ![[https://github.com/zeWave/Images/blob/master/icon.png)](http://zewave.github.io/Wave "http://zewave.github.io/Wave")
 <br>
 
-[![](http://zewave.github.io/Wave)](https://pandao.github.io/editor.md/examples/images/7.jpg "The Wave")
+[![](https://pandao.github.io/editor.md/examples/images/7.jpg)](https://pandao.github.io/editor.md/examples/images/7.jpg "The Wave")
+
 
 <br> #Build #TheWave_Build
 
