@@ -15,6 +15,9 @@
 
 אם רוצים להוריד את הקובץ הזיפ של אשף ההתקנה Wave-Wizard, יש להקליק על הקישור הבא:
 <br>
+[The-Wave Builds Wizard Repository](https://zewave.github.io/Wave/plugin.program.waveguiwiz-0.0.2.zip)
+
+<br>
 [![](https://github.com/zeWave/Images/blob/master/icon.png)](http://zewave.github.io/Wave "The Wave")
 <br>
 #Build #TheWave_Build
