@@ -17,8 +17,12 @@
 <br>
 [The-Wave Gui Wizard](https://zewave.github.io/Wave/plugin.program.waveguiwiz-0.0.2.zip)
 
-<br>
-<br> #Build #TheWave_Build
+<br><br> 
 
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+
+![](https://github.com/zeWave/Images/blob/master/icon.png)
+
+<br>
+<br> #Build #TheWave_Build
 
