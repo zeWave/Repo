@@ -24,4 +24,5 @@ http://zewave.github.io/Wave
 <br>
 <br> #Build #TheWave_Build
 
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 
