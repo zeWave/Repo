@@ -19,9 +19,7 @@
 
 <br><br> 
 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
-
-![](https://github.com/zeWave/Images/blob/master/icon.png)
+![Icon](https://github.com/zeWave/Images/blob/master/icon.png)
 
 <br>
 <br> #Build #TheWave_Build
