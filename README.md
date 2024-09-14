@@ -3,7 +3,7 @@
 #### הוראות התקנה (-)
 - יש להגדיר מקור התקנה, במנהל הקבצים של קודי, מהקישור הבא: 
 <br>
-http://zewave.github.io/Wave
+- http://zewave.github.io/Wave
 <br><br>
 יש לתת שם לקישור, כמו: Wave 
 <br>
