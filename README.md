@@ -13,7 +13,7 @@
 
 אם רוצים להוריד את הקובץ הזיפ של מאגר Wave, יש להקליק על הקישור הבא:
 <br>
-[The-Wave repository](https://github.com/zeWave/Repo/raw/master/zips/repository.zeWave/repository.zeWave-0.0.1.zip)
+[The-Wave repository](https://zewave.github.io/Wave/repository.zeWave-0.0.1.zip)
 
 אם רוצים להוריד את הקובץ הזיפ של אשף ההתקנה Wave-Wizard, יש להקליק על הקישור הבא:
 <br>
