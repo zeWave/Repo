@@ -337,9 +337,9 @@ Use this to organize your Favourites.
 <!-- 7- Repositories C -->
 
 <!-- 7.1- The Wave repo -->
-<addon id="repository.zeWave"
-		name="The Wave repo"
-		version="0.0.1"
+<addon id="repository.wave"
+		name="Wave repo"
+		version="0.0.2"
 		provider-name="The Wave Team">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
