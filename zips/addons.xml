@@ -169,32 +169,30 @@ Use this to organize your Favourites.
 <!-- 3.4- The Wave Builds Gui Wizard -->
 <addon 
 	id="plugin.program.wave" 
-	name="[COLOR yellow]The Wave Wizard[/COLOR]" 
-	version="2.0.15" provider-name="The Wave Team">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" optional="true" />
-        <import addon="script.module.six" optional="true" />
-        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
-    </requires>    
-    <extension point="xbmc.python.pluginsource" library="default.py">
+	name="[COLOR yellow]The Wave Builds Gui Wizard[/COLOR]" version="2.0.12" 
+	provider-name="[COLOR yellow]The Wave Team[/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.six" />
+    <import addon="script.module.kodi-six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
-    </extension>    
-    <extension point="xbmc.service" library="startup.py" start="startup" />
-    
-    <extension point="xbmc.addon.metadata">
-    <summary lang="en">The Wave Wizard</summary>
-    <description lang="en">אשף התקנה זה החבת תוכנה גרפית להתקנת בילדים. 
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The Wave GUI Wizard</summary>
+    <description lang="en">אשף התקנה זה הוא הרחבת תוכנה גרפית להתקנת בילדים. 
 בעזרת האשף תוכל להתקין בילדים, לבצע בדיקות שונות ולהפעיל כלי תחזוקה שונים. </description>
-        <platform>all</platform>
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-        <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
-        <news></news>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
+    <platform>all</platform>
+    <assets>
+				<icon>icon.png</icon>
+				<fanart>fanart.jpg</fanart>
+				<banner></banner>
+				<clearlogo></clearlogo>
+				<screenshot></screenshot>
+		</assets>
+  </extension>
 </addon>
 
 <!-- 5- plugin.video B -->
