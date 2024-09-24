@@ -117,8 +117,8 @@
     </extension>
 </addon>
 
-<!-- 3.3- order favourites-hebrew -->
-<addon id="plugin.program.orderfavourites-hebrew" name="סידור מועדפים" version="1.2.1" provider-name="doko">
+<!-- 3.3- order favourites (hebrew) -->
+<addon id="plugin.program.orderfavourites" name="סידור מועדפים" version="1.2.1" provider-name="doko">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -127,7 +127,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
 	<assets>
-        <icon>icon.jpg</icon>
+        <icon>icon.png</icon>
     </assets>
     <news>
 [COLOR lavender][B]Order Favourites[/B][/COLOR]
@@ -158,9 +158,9 @@ clearer.
 [B]1.0.2:[/B]
 - Fix for when the favorite item has unicode text.
     </news>
-    <description lang="en">
-Lets you reorder the entries in your Favourites.
-Use this to organize your Favourites.
+    <summary lang="he">סידור מועדפים</summary>
+    <description lang="he">
+הרחבה המאפשרת לסדר מחדש את המועדפים בקודי.
     </description>
     <platform>all</platform>
   </extension>
@@ -493,6 +493,29 @@ Use this to organize your Favourites.
 		</assets>
 		<news></news>
 	</extension>
+</addon>
+
+<!-- 8.2- Script Module Pair-With -->
+<addon id="script.module.pairwith"
+  name="אשר דבריד/טרקט"
+  version="1.2" 
+  provider-name="Kodi Guru">
+  <requires>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary lang="he">אשר דבריד/טרקט -</summary>
+    <description lang="he">הרחבת עזר לאישור דבריד/טרקט להרחבות: 
+	ResolveURL, Fen, Mando.</description>
+	<disclaimer>אשר דבריד/טרקט</disclaimer>
+  </extension>
 </addon>
 
 <!-- 9- Services -->
