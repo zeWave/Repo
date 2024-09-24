@@ -169,8 +169,8 @@ clearer.
 <!-- 3.4- The Wave Builds Gui Wizard -->
 <addon 
 	id="plugin.program.wave" 
-	name="[COLOR yellow]The Wave Builds Gui Wizard[/COLOR]" version="2.0.12" 
-	provider-name="[COLOR yellow]The Wave Team[/COLOR]">
+	name="[COLOR yellow]The Wave[/COLOR] - [COLOR Aqua]אשף התקנות[/COLOR]" version="2.0.14" 
+	provider-name="[COLOR white]The Wave Team[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.six" />
@@ -181,8 +181,8 @@ clearer.
   </extension>
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">The Wave GUI Wizard</summary>
-    <description lang="en">אשף התקנה זה הוא הרחבת תוכנה גרפית להתקנת בילדים. 
+    <summary lang="he">אשף התקנות - The Wave</summary>
+    <description lang="he">אשף התקנה זה הוא הרחבת תוכנה גרפית להתקנת בילדים. 
 בעזרת האשף תוכל להתקין בילדים, לבצע בדיקות שונות ולהפעיל כלי תחזוקה שונים. </description>
     <platform>all</platform>
     <assets>
