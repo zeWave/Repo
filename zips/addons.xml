@@ -169,7 +169,7 @@ clearer.
 <!-- 3.4- The Wave Builds Gui Wizard -->
 <addon 
 	id="plugin.program.wave" 
-	name="[COLOR yellow]The Wave[/COLOR] - [COLOR Aqua]אשף התקנות[/COLOR]" version="2.0.14" 
+	name="[COLOR yellow]The Wave[/COLOR] - [COLOR blue]אשף התקנות[/COLOR]" version="2.0.15" 
 	provider-name="[COLOR white]The Wave Team[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -181,8 +181,8 @@ clearer.
   </extension>
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="he">אשף התקנות - The Wave</summary>
-    <description lang="he">אשף התקנה זה הוא הרחבת תוכנה גרפית להתקנת בילדים. 
+    <summary lang="he_IL">אשף התקנות - The Wave</summary>
+    <description lang="he_IL">אשף התקנה זה הוא הרחבת תוכנה גרפית להתקנת בילדים. 
 בעזרת האשף תוכל להתקין בילדים, לבצע בדיקות שונות ולהפעיל כלי תחזוקה שונים. </description>
     <platform>all</platform>
     <assets>
@@ -224,16 +224,16 @@ clearer.
 </addon>
 
 <!-- 5.2- Fen-Light -->
-<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="1.0.76">
+<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="1.0.84">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
     </requires>
-    <extension library="resources/lib/fenlight.py" point="xbmc.python.pluginsource">
+    <extension point="xbmc.python.pluginsource" library="resources/lib/fenlight.py">
         <provides>video</provides>
     </extension>
-    <extension library="resources/lib/service.py" point="xbmc.service"/>
-    <extension library="resources/lib/" point="xbmc.python.module"/>
+    <extension point="xbmc.service" library="resources/lib/service.py"/>
+    <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <reuselanguageinvoker>true</reuselanguageinvoker>
         <summary lang="en">Access your content from Easynews and Debrid Clouds.</summary>
@@ -242,7 +242,7 @@ clearer.
 		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
         <license/>
         <assets>
-            <icon>resources/media/fenlight_icon_golfing.png</icon>
+            <icon>resources/media/fenlight_icon.png</icon>
             <fanart>resources/media/fenlight_fanart2.jpg</fanart>
         </assets>
         <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
