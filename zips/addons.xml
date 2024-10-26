@@ -198,7 +198,7 @@ clearer.
 <!-- 5- plugin.video B -->
 
 <!-- 5.1- Fen -->
-<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter" version="3.2.29">
+<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter" version="3.2.30">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -224,7 +224,7 @@ clearer.
 </addon>
 
 <!-- 5.2- Fen-Light -->
-<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="1.0.84">
+<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="1.0.89">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -521,7 +521,7 @@ clearer.
 <!-- 9- Services -->
 
 <!-- 9.1- DarkSubs -->
-<addon id="service.subtitles.All_Subs" name="DarkSubs" version="4.6.2" provider-name="Sbs">
+<addon id="service.subtitles.All_Subs" name="DarkSubs" version="4.6.6" provider-name="Sbs">
   <requires>
     <import addon="script.module.requests" version="2.9.1" />
     <import addon="script.module.chardet" />
