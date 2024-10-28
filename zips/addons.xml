@@ -521,7 +521,7 @@ clearer.
 <!-- 9- Services -->
 
 <!-- 9.1- DarkSubs -->
-<addon id="service.subtitles.All_Subs" name="DarkSubs" version="4.6.6" provider-name="Sbs">
+<addon id="service.subtitles.All_Subs" name="DarkSubs" version="4.6.9" provider-name="Sbs">
   <requires>
     <import addon="script.module.requests" version="2.9.1" />
     <import addon="script.module.chardet" />
