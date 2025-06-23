@@ -196,8 +196,42 @@ clearer.
 </addon>
 
 <!-- 5- plugin.video B -->
+	
+<!-- 5.1- Asgard -->
+<addon id="plugin.video.asgard" name="[COLOR goldenrod]Asgard[/COLOR]" provider-name="Team Asgard" version="1.6.1">
+    <requires>
+	    <import addon="script.module.six" version="0.0.1"/>
+		<import addon="script.module.requests"/>
+        <import addon="script.module.resolveurl"/>
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+	<extension library="resources/modules/" point="xbmc.python.module" />
+    <extension library="resources/sources/" point="xbmc.python.module" />
+    <extension library="resources/" point="xbmc.python.module" />
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+	<reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en">Welcome to Asgard</summary>
+        <description lang="en">“Asgard is not a place, it's a people.”</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum />
+        <website />
+        <source />
+        <disclaimer lang="en">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news>
 
-<!-- 5.1- Fen -->
+        </news>
+    </extension>
+</addon>
+
+<!-- 5.2- Fen -->
 <addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter" version="3.5.02">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -223,7 +257,7 @@ clearer.
     </extension>
 </addon>
 
-<!-- 5.2- Fen-Light -->
+<!-- 5.3- Fen-Light -->
 <addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="2.0.07">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -249,7 +283,7 @@ clearer.
     </extension>
 </addon>
 
-<!-- 5.3- Kids New -->
+<!-- 5.4- Kids New -->
 <addon id="plugin.video.kids_new"                                                                                                                                    
 	   name="הכל לילדים"                                                 
 	   version="2.6.4"                                                                                                                                        
@@ -279,7 +313,7 @@ clearer.
   </extension>
 </addon>
 
-<!-- 5.4- Mando -->
+<!-- 5.5- Mando -->
 <addon id="plugin.video.mando"                                                                                                                                    
 	   name="Mando"                                                 
 	   version="6.5.2"                                                                                                                                        
@@ -306,7 +340,7 @@ clearer.
   </extension>
 </addon>
 
-<!-- 5.5- Playlist Loader -->
+<!-- 5.6- Playlist Loader -->
 <addon id="plugin.video.playlistloader" name="Playlist Loader" version="1.1.4" provider-name="Nux007, Publish3r, Silhouette2022">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -331,7 +365,7 @@ clearer.
   </extension>
 </addon>
 
-<!-- 5.6- Telemedia 2.0 -->
+<!-- 5.7- Telemedia 2.0 -->
 <addon id="plugin.video.telemedia"                                                                                                                                    
 	   name="Telemedia 2.0"                                                 
 	   version="3.0.2"                                                                                                                                        
