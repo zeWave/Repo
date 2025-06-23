@@ -283,7 +283,34 @@ clearer.
     </extension>
 </addon>
 
-<!-- 5.4- Kids New -->
+<!-- 5.4- Fen-Light AM -->
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.27">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.pil" version="1.1.7"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/fenlight.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="resources/lib/service.py"/>
+    <extension point="xbmc.python.module" library="resources/lib/"/>
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en">Access your content from Easynews and Debrid Clouds.</summary>
+        <description lang="en">This add-on is intended for advanced Kodi users only. You must own the content of any media you play through this addon. This is an English language only add-on.</description>
+        <platform>all</platform>
+		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
+        <license/>
+        <assets>
+            <icon>resources/media/fenlightam_icon.png</icon>
+            <fanart>resources/media/fenlightam_fanart.jpg</fanart>
+        </assets>
+        <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
+    </extension>
+</addon>
+
+<!-- 5.5- Kids New -->
 <addon id="plugin.video.kids_new"                                                                                                                                    
 	   name="הכל לילדים"                                                 
 	   version="2.6.4"                                                                                                                                        
@@ -313,7 +340,7 @@ clearer.
   </extension>
 </addon>
 
-<!-- 5.5- Mando -->
+<!-- 5.6- Mando -->
 <addon id="plugin.video.mando"                                                                                                                                    
 	   name="Mando"                                                 
 	   version="6.5.2"                                                                                                                                        
@@ -340,7 +367,7 @@ clearer.
   </extension>
 </addon>
 
-<!-- 5.6- Playlist Loader -->
+<!-- 5.7- Playlist Loader -->
 <addon id="plugin.video.playlistloader" name="Playlist Loader" version="1.1.4" provider-name="Nux007, Publish3r, Silhouette2022">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -365,7 +392,7 @@ clearer.
   </extension>
 </addon>
 
-<!-- 5.7- Telemedia 2.0 -->
+<!-- 5.8- Telemedia 2.0 -->
 <addon id="plugin.video.telemedia"                                                                                                                                    
 	   name="Telemedia 2.0"                                                 
 	   version="3.0.2"                                                                                                                                        
@@ -499,8 +526,8 @@ clearer.
     </extension>
 </addon>
 
-<!-- 8.2- Script Module CocoScrapers -->
-<addon id="script.module.cocoscrapers" name="CocoScrapers Module" version="1.0.23" provider-name="CocoJoe">
+<!-- 8.3- Script Module CocoScrapers -->
+<addon id="script.module.cocoscrapers" name="CocoScrapers Module" version="1.0.32" provider-name="CocoJoe">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -529,7 +556,7 @@ clearer.
 	</extension>
 </addon>
 
-<!-- 8.2- Script Module Pair-With -->
+<!-- 8.4- Script Module Pair-With -->
 <addon id="script.module.pairwith"
   name="אשר דבריד/טרקט"
   version="1.2" 
