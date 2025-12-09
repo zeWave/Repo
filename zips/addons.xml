@@ -5,52 +5,30 @@
 <!-- 1- Context -->
 
 <!-- 1.1- Subtitles Dialog - Contextmenu -->
-<addon id="plugin.audio.dashradio" name="Litt Live Radio" version="421.3" provider-name="Diggz">
-<requires>
-  <import addon="xbmc.python" version="3.0.0"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="main.py">
-  <provides>audio</provides>
-</extension>
-<extension point="xbmc.addon.metadata">
-    <summary lang="en">Dash Radio</summary>
-    <description lang="en">Litt Live (stylized as LITT Live, formerly Dash Radio) is a digital radio broadcasting platform with over 80 radio stations. These stations are curated by DJs, radio personalities, musicians, etc. The platform includes partner stations curated by Snoop Dogg, Kylie Jenner, Lil Wayne, Tech N9ne, Borgore, B-Real of Cypress Hill, and others. Dash Radio has no subscription fees and is commercial-free.
-
-</description>
-    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        <license>Free</license>
-    <platform>all</platform>
-  <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-     </assets>	
+<addon id="context.subtitlesdialog.contextmenu" name="Subtitles Dialog - Contextmenu" version="1.0.1" provider-name="burekas">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="kodi.context.item" library="addon.py">
+      <item>
+        <label>32000</label>
+        <visible>true</visible>
+      </item>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Adds a subtitles dialog contextmenu button</summary>
+        <description lang="en">Adds a subtitles dialog contextmenu button to context menu, so you can use the subtitles dialog also when kodi is not playing.[CR]You can use the manual search button to check if subtitles exist, or focus on an item and it will automatically check it for you without typing.[CR][CR]Only supported by these addons and above:[CR]Subscenter.org (4.1.2)[CR]Ktuvit.com (4.5.1)[CR]TheWiz Subs (1.1.4)[CR]Torec (1.2.1)</description>
+        <platform>all</platform>
+        <language></language>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum>http://www.hometheater.co.il/vt265959.html</forum>
+        <source></source>
     </extension>
 </addon>
 
 <!-- 2- plugin.audio -->
 
-<!-- 2.1- Dash Radio -->
-<addon id="plugin.audio.dashradio" name="Dash Radio" version="420.3" provider-name="Diggz">
-<requires>
-  <import addon="xbmc.python" version="3.0.0"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="main.py">
-  <provides>audio</provides>
-</extension>
-<extension point="xbmc.addon.metadata">
-    <summary lang="en">Dash Radio</summary>
-    <description lang="en">Dash Radio is a digital radio broadcasting platform over 80 original stations. These stations are curated by DJs, radio personalities, musicians, and music tastemakers. The platform includes partner stations curated by Snoop Dogg, Kylie Jenner, Lil Wayne, Tech N9ne, Borgore, B-Real of Cypress Hill, and others.</description>
-    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        <license>Free</license>
-    <platform>all</platform>
-  <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-     </assets>	
-    </extension>
-</addon>
-
-<!-- 2.2- MP3 Streams -->
+<!-- 2.1- MP3 Streams -->
 <addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2025.0.1" provider-name="Jon Bovi">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -197,43 +175,9 @@ clearer.
 </addon>
 
 <!-- 5- plugin.video B -->
-	
-<!-- 5.1- Asgard -->
-<addon id="plugin.video.asgard" name="[COLOR goldenrod]Asgard[/COLOR]" provider-name="Team Asgard" version="1.6.1">
-    <requires>
-	    <import addon="script.module.six" version="0.0.1"/>
-		<import addon="script.module.requests"/>
-        <import addon="script.module.resolveurl"/>
-    </requires>
-    <extension library="default.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-	<extension library="resources/modules/" point="xbmc.python.module" />
-    <extension library="resources/sources/" point="xbmc.python.module" />
-    <extension library="resources/" point="xbmc.python.module" />
-    <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>true</reuselanguageinvoker>
-	<reuselanguageinvoker>true</reuselanguageinvoker>
-        <summary lang="en">Welcome to Asgard</summary>
-        <description lang="en">“Asgard is not a place, it's a people.”</description>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum />
-        <website />
-        <source />
-        <disclaimer lang="en">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <news>
 
-        </news>
-    </extension>
-</addon>
-
-<!-- 5.2- Fen -->
-<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter" version="3.5.02">
+<!-- 5.1- Fen -->
+<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter, The Red Wizard" version="3.5.05">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -254,38 +198,12 @@ clearer.
             <icon>resources/media/fen_icon.png</icon>
             <fanart>resources/media/fen_fanart.png</fanart>
         </assets>
-        <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
+        <news>Unofficial updates by The Red Wizard. For the latest changes, see the Changelog in FEN->Tools.</news>
     </extension>
 </addon>
 
-<!-- 5.3- Fen-Light -->
-<addon id="plugin.video.fenlight" name="Fen Light" provider-name="Tikipeter" version="2.0.07">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="resources/lib/fenlight.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="resources/lib/service.py"/>
-    <extension point="xbmc.python.module" library="resources/lib/"/>
-    <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>true</reuselanguageinvoker>
-        <summary lang="en">Access your content from Easynews and Debrid Clouds.</summary>
-        <description lang="en">This add-on is intended for advanced Kodi users only. You must own the content of any media you play through this addon. This is an English language only add-on.</description>
-        <platform>all</platform>
-		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
-        <license/>
-        <assets>
-            <icon>resources/media/fenlight_icon.png</icon>
-            <fanart>resources/media/fenlight_fanart2.jpg</fanart>
-        </assets>
-        <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
-    </extension>
-</addon>
-
-<!-- 5.4- Fen-Light AM -->
-<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.30">
+<!-- 5.2- Fen-Light Anony-Mouse -->
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.60">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -311,64 +229,7 @@ clearer.
     </extension>
 </addon>
 
-<!-- 5.5- Kids New -->
-<addon id="plugin.video.kids_new"                                                                                                                                    
-	   name="הכל לילדים"                                                 
-	   version="2.6.4"                                                                                                                                        
-	   provider-name="Kid one">
-  <requires>
-
-	<import addon="script.module.requests"/>
-	<import addon="script.module.resolveurl"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension library="resources/modules/" point="xbmc.python.module" />
-  <extension library="resources/" point="xbmc.python.module" />
-  <extension library="script.module.requests" point="xbmc.python.module" />
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-	<reuselanguageinvoker>true</reuselanguageinvoker>
-    <summary lang="he">הכל לילדים</summary>
-    <description lang="he">הכל לילדים</description>
-    <platform>all</platform>
-	<assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-<!-- 5.6- Mando -->
-<addon id="plugin.video.mando"                                                                                                                                    
-	   name="Mando"                                                 
-	   version="6.5.2"                                                                                                                                        
-	   provider-name="Darkness">
-  <requires>
-	
-<!-- <import addon="script.module.requests"/> -->
-	<!-- <import addon="script.module.resolveurl" /> -->
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="main.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-  <reuselanguageinvoker>true</reuselanguageinvoker>
-    <summary lang="en">The single light in the Darkness</summary>
-    <description lang="en">All the media as fast as possible</description>
-	
-    <platform>all</platform>
-	<assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-<!-- 5.7- Playlist Loader -->
+<!-- 5.3- Playlist Loader -->
 <addon id="plugin.video.playlistloader" name="Playlist Loader" version="1.1.4" provider-name="Nux007, Publish3r, Silhouette2022">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -393,7 +254,7 @@ clearer.
   </extension>
 </addon>
 
-<!-- 5.8- Telemedia 2.0 -->
+<!-- 5.4- Telemedia 2.0 -->
 <addon id="plugin.video.telemedia"                                                                                                                                    
 	   name="Telemedia 2.0"                                                 
 	   version="3.0.2"                                                                                                                                        
@@ -457,58 +318,7 @@ clearer.
 
 <!-- 8- Scripts -->
 
-<!-- 8.1- EZ Maintenance+ -->
-<addon id="script.ezmaintenanceplus" name="EZ Maintenance+" version="2023.01.09.0" provider-name="aenema, peno">
-  <requires>
-    <import addon="script.module.requests" version="1.0.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-     <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-	<summary>A Streamlined Utility Tool for Kodi</summary>
-	<description>No Bloatware, no Nonsense! Just Keep your Kodi sharp and clean with this utility tool... Now with a Custom Wizard.</description>
-    <language></language>
-    <platform>all</platform>
-    <license>The MIT License</license>
-    <forum>-</forum>
-    <source>https://github.com</source>
-    <assets>
-	    <icon>icon.png</icon>
-	    <fanart>fanart.png</fanart>
-    </assets>
-    <news>
-2023.01.09.0
- - Added AutoClean Cache functionality every x days at a given hour.
- - Backup always replaced the home folder reference in xml files with special://home
-   Not all addons can handle this replace so it is now possible via a setting to disable this.
- - Backup Cancel didn't work. This is now fixed.
-
-2023.01.01.0
- - Fix a fix on 2022.12.28.0
-
-2022.12.28.0
- - Fix crash with full backup when there are foreign, like Hebrew, characters in xml files
-
-2021.12.19.0
- - Made kodi 19 (Matrix) compatible.
-
-2021.11.03.0
-- Fix Speedtest crash.
-
-2020.12.19.1
-- The plugin was also installed under Video add-ons. Now it only is in Program add-ons where it belongs
-- Clean removed some files created by Common plugin cache or StorageServer or script.common.plugin.cache at kodi startup.
-  This resulted in breaking cache functionality of kodi
-- Upload kodi log file to pastebin didn't always work and the first bytes were binary characters
-- Made all decode calls UTF-8
-- Improved ADVANCED SETTINGS(BUFFER SIZE) functionality
-    </news>
-  </extension>
-</addon>
-
-<!-- 8.2- Script Module Autocompletion -->
+<!-- 8.1- Script Module Autocompletion -->
 <addon id="script.module.autocompletion" name="AutoCompletion library" version="2.1.2" provider-name="Philipp Temminghoff (phil65), bbaronSVK, finkleandeinhorn, berkhornet">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -527,8 +337,8 @@ clearer.
     </extension>
 </addon>
 
-<!-- 8.3- Script Module CocoScrapers -->
-<addon id="script.module.cocoscrapers" name="CocoScrapers Module" version="1.0.32" provider-name="CocoJoe">
+<!-- 8.2- Script Module CocoScrapers -->
+<addon id="script.module.cocoscrapers" name="CocoScrapers Module" version="1.0.39" provider-name="CocoJoe">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -557,7 +367,7 @@ clearer.
 	</extension>
 </addon>
 
-<!-- 8.4- Script Module Pair-With -->
+<!-- 8.3- Script Module Pair-With -->
 <addon id="script.module.pairwith"
   name="אשר דבריד/טרקט"
   version="1.2" 
