@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.mando"                                                                                                                                    
 	   name="Mando"                                                 
-	   version="6.5.2"                                                                                                                                        
+	   version="7.3.8"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
 	
-<!-- <import addon="script.module.requests"/> -->
+ <import addon="script.module.requests"/> 
 	<!-- <import addon="script.module.resolveurl" /> -->
   </requires>
   <extension point="xbmc.python.pluginsource"
